@@ -1,0 +1,64 @@
+section
+  .catalog
+    .container
+      .row
+        .catalog__toolbar.js-catalog__toolbar
+          .catalog__inner
+            .cat-nav
+              h6.cat-nav__title Submenu
+              ul.cat-nav__nav
+                each catItem in category
+                  li.cat-nav__item
+                    a.cat-nav__item-link(href=catItem.href)=catItem.name
+                    span.cat-nav__count=catItem.count
+            .cat-nav
+              h6.cat-nav__title Submenu
+              ul.cat-nav__nav
+                each catItem in category
+                  li.cat-nav__item
+                    a.cat-nav__item-link(href=catItem.href)=catItem.name
+                    span.cat-nav__count=catItem.count
+            .cat-nav
+              h6.cat-nav__title Submenu
+              ul.cat-nav__nav
+                each catItem in category
+                  li.cat-nav__item
+                    a.cat-nav__item-link(href=catItem.href)=catItem.name
+                    span.cat-nav__count=catItem.count
+            .cat-nav
+              h6.cat-nav__title Submenu
+              ul.cat-nav__nav
+                each catItem in category
+                  li.cat-nav__item
+                    a.cat-nav__item-link(href=catItem.href)=catItem.name
+                    span.cat-nav__count=catItem.count
+            .cat-nav
+              h6.cat-nav__title Submenu
+              ul.cat-nav__nav
+                each catItem in category
+                  li.cat-nav__item
+                    a.cat-nav__item-link(href=catItem.href)=catItem.name
+                    span.cat-nav__count=catItem.count
+
+        .catalog__container
+          .catalog__title
+            h1 Page title in
+              span  New York
+          .filter-block
+            .filter-block__search
+              form.filter-block__form
+                input.filter-block__input(type='search', name='search', placeholder='Search...')
+                button.filter-block__submit
+                  +icon('search-symbol','main_mod')
+            a(href='#').filter-block__elem New item
+
+            a(href="#").filter-block__sort
+              +icon('equalizer', 'main_mod')
+
+          .post__container
+            include components/_post
+
+          nav.pagination-block
+            ul.pagination.js-pagination
+
+          include partials/_footer

@@ -1,0 +1,99 @@
+.post__container > .post {
+  padding: 0;
+
+  &:not(:last-child)  {
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $md) {
+    padding: 0 30px;
+  }
+}
+
+.post {
+  display: flex;
+
+  &__image {
+    min-width: 30px;
+    margin-right: 20px;
+
+    img {
+      max-width: 100%;
+    }
+
+    @media (min-width: $md) {
+      display: block;
+      overflow: hidden;
+      min-width: 62px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  &__header {
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    color: $color-success;
+
+    @media (min-width: $md) {
+      font-size: 14px;
+    }
+  }
+
+  &__name {
+    margin-right: 8px;
+
+    @media (min-width: $md) {
+      margin-right: 20px;
+    }
+  }
+
+  &__message {
+    margin-right: 10px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    color: $color-main-light;
+  }
+
+  &__info {
+    margin-bottom: 20px;
+  }
+
+  &__meta {
+    display: flex;
+    justify-content: flex-start;
+    color: $color-success;
+    margin-top: auto;
+
+  }
+
+  &__meta-item {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+}
+
+.badge {
+  display: inline-block;
+  text-align: center;
+  padding: 5px 20px;
+  border-radius: 2px;
+}
+
+.badge-success {
+  color: $color-success;
+  background-color: $color-secondary;
+}
+
+
+
+

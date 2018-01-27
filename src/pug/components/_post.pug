@@ -1,0 +1,41 @@
+each val in post
+  .post
+    a(href="#").post__image
+      img(src="http://via.placeholder.com/62x62" alt="photo")
+    .post__content
+      .post__header
+        .post__col
+          span.post__name User name
+          span.post__badge.badge.badge-success=val.name
+        .post__col
+          a(href="#").post__message 2
+            +icon('chat', 'success_mod')
+          a(href="#").post__time 20m
+            +icon('time', 'success_mod')
+
+      h4.post__title=val.title
+      .post__info
+        p Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.
+          | Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit.
+          | Sed ut imperdiet nisi. Proin condimentum fermentum nunc.
+      ul.post__meta
+        li.post__meta-item
+          a(href='#')
+            +icon('tag', 'success_mod')
+        li.post__meta-item
+          a(href='#') tag1,
+
+        li.post__meta-item
+          a(href='#') tag2,
+
+        li.post__meta-item
+          a(href='#') tag3
+
+
+
+
+
+
+
+
+

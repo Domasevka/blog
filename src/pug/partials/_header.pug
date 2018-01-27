@@ -1,0 +1,46 @@
+header
+  .header
+    .header__row.header__row_top
+      .container
+        .row
+          .header__column.header__column_nav-button
+            .nav__button
+              +icon('bar-menu','white_mod')
+          .header__column
+            a(href="#").header__logo
+              img(src="img/logotype.png" alt="LoGo")
+          .header__column
+            ul.contacts-nav__list
+              li.contacts-nav__item
+                a(href='#') New York
+                //select(data-placeholder="Date" class="chosen-select" tabindex="2").filter__contant
+                //  option(value="")
+                //  option(value="Relevance")
+                //  option(value="New Arrivals")
+              li.contacts-nav__item
+                a(href='#')
+                  +icon('bell','main_mod')
+              li.contacts-nav__item
+                a(href='#')
+                  +icon('mail','main_mod')
+              li.contacts-nav__item.contacts-nav__item_user
+                a(href='#') User name
+
+              li.contacts-nav__item
+                a.header__search(href='#')
+                  +icon('search-symbol','.main_mod')
+
+    .header__row.header__row_bottom
+      .container
+        .row
+          nav.main-menu
+            each val in menu
+              a.main-menu__link(href=val.href)=val.name
+
+
+
+
+
+
+
+

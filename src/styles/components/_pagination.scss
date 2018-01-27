@@ -1,0 +1,104 @@
+.pagination-block {
+  display: flex;
+  justify-content: center;
+  color: $gray--dark;
+  text-align: center;
+  width: 100%;
+  padding-top: 50px;
+  margin-bottom: 50px;
+  //border-bottom: 1px solid $gray--lighten;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  color: $gray--dark;
+
+  .page-item {
+    display: block;
+    position: relative;
+
+    &.next {
+      &:before {
+        position: absolute;
+        right: 0;
+        bottom: -6px;
+        left: auto;
+        width: 15px;
+        height: 15px;
+        content: "";
+        display: block;
+        border: 2px solid #15232d;
+        border-bottom: none;
+        border-left: none;
+        transform: translate(-75%, -50%) rotate(45deg);
+        background-color: transparent;
+      }
+
+      &.disabled {
+        &:before {
+          background-color: transparent;
+        }
+      }
+    }
+
+    &.prev {
+      &:before {
+        position: absolute;
+        right: auto;
+        bottom: -6px;
+        left: 23px;
+        width: 15px;
+        height: 15px;
+        content: "";
+        display: block;
+        border: 2px solid #15232d;
+        border-bottom: none;
+        border-left: none;
+        transform: translate(-75%, -50%) rotate(-135deg);
+        background-color: transparent;
+      }
+
+      &.disabled {
+
+        &:before {
+          background-color: transparent;
+        }
+      }
+    }
+
+    &:not(:last-child) {
+      margin-right: 35px;
+    }
+
+    &.active {
+      color: $color-main;
+    }
+  }
+}
+
+.page-link {
+  &:hover {
+    background-color: $color-secondary;
+  }
+}
+
+.prev {
+  .page-link {
+    padding: 10px 20px 10px 25px;
+    border: 1px solid $gray--darken;
+    border-radius: 2px;
+  }
+}
+
+.next {
+  .page-link {
+    padding: 10px 25px 10px 20px;
+    border: 1px solid $gray--darken;
+    border-radius: 2px;
+  }
+}
+
+
+
+

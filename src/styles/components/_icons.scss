@@ -1,0 +1,60 @@
+.icon {
+  svg {
+    display: inline-block;
+    height: 33px;
+    width: 33px;
+    vertical-align: middle;
+    opacity: 0.8;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.icon {
+  fill: currentColor;
+}
+
+// about
+
+.icon-equalizer {
+  position: absolute;
+  top:0;
+  width: 22px;
+  height: 24px;
+  transform: translate(-50%,-50%) rotate(-90deg);
+}
+
+.icon-tag {
+  width: 16px;
+  height: 16px;
+}
+
+.icon-chat {
+  width: 16px;
+  height: 16px;
+}
+
+.icon-time {
+  width: 16px;
+  height: 16px;
+}
+
+.icon-bar-menu {
+  width: 16px;
+  height: 16px;
+}
+
+.success_mod {
+  color: $color-success;
+}
+
+.main_mod {
+  color: $color-main;
+}
+
+.white_mod {
+  color: $color-white;
+}
+
+
